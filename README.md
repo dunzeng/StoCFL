@@ -42,7 +42,7 @@ python StoCFL-FCC+CFL.py --n 200 \
 
 ## Citation
 
-If you find this repo helpful to your reseach, please cite our paper:
+If you find this repo helpful to your research, please cite our paper:
 ```
 @article{zeng2023stochastic,
   title={Stochastic clustered federated learning},
