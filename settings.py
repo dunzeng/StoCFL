@@ -257,15 +257,15 @@ def cifar10(args):
     return model, trainset, testset, data_indices, test_loader
 
 
-def femnist(args):
-    model = CNN_FEMNIST()
-    train_transform, test_transform = get_data_transform('mnist')
-    #train_dataset = FEMNIST('/data/zengdun/dataset/data/femnist', dataset='train', transform=train_transform)
-    test_dataset = FEMNIST('/data/zengdun/dataset/data/femnist',
-                           dataset='test',
-                           transform=test_transform)
-    #val_dataset = FEMNIST('/data/zengdun/dataset/data/femnist', dataset='val', transform=test_transform)
+# def femnist(args):
+#     model = CNN_FEMNIST()
+#     train_transform, test_transform = get_data_transform('mnist')
+#     #train_dataset = FEMNIST('/data/zengdun/dataset/data/femnist', dataset='train', transform=train_transform)
+#     test_dataset = FEMNIST('/data/zengdun/dataset/data/femnist',
+#                            dataset='test',
+#                            transform=test_transform)
+#     #val_dataset = FEMNIST('/data/zengdun/dataset/data/femnist', dataset='val', transform=test_transform)
 
-    test_loader = DataLoader(test_dataset, batch_size=512)
+#     test_loader = DataLoader(test_dataset, batch_size=512)
 
-    return model, test_loader
+#     return model, test_loader
